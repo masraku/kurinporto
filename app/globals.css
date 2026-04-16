@@ -1,26 +1,148 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --pink-50: #fef1f6;
+  --pink-100: #fde4ef;
+  --pink-200: #fcc8df;
+  --pink-300: #fbA3C7;
+  --pink-400: #f97bae;
+  --pink-500: #f14d8a;
+  --pink-600: #e12d6a;
+  --pink-700: #c41d52;
+  --pink-800: #a11c44;
+  --pink-900: #861c3c;
+  
+  --lavender-100: #f0e6ff;
+  --lavender-200: #e0ccff;
+  --lavender-300: #d1b3ff;
+  
+  --cream: #fff9f5;
+  --warm-white: #fffbfc;
+  --soft-brown: #c4897a;
+  --dark-brown: #a06858;
+  
+  --card-shadow: 0 8px 40px rgba(241, 77, 138, 0.15), 0 2px 10px rgba(241, 77, 138, 0.08);
+  --card-glow: 0 0 60px rgba(241, 77, 138, 0.12), 0 0 120px rgba(225, 45, 106, 0.06);
+  --button-shadow: 0 2px 8px rgba(241, 77, 138, 0.18);
+  
+  --font-heading: 'Fredoka', sans-serif;
+  --font-body: 'Quicksand', sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--pink-50);
+  --color-foreground: var(--soft-brown);
+  --font-sans: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, var(--pink-100) 0%, var(--lavender-100) 50%, var(--pink-50) 100%);
+  background-attachment: fixed;
+  color: var(--soft-brown);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════════ */
+/* FLOATING PARTICLES / SPARKLES              */
+/* ═══════════════════════════════════════════ */
+@keyframes float-up {
+  0% { transform: translateY(100vh) rotate(0deg) scale(0); opacity: 0; }
+  10% { opacity: 1; scale: 1; }
+  90% { opacity: 0.8; }
+  100% { transform: translateY(-20vh) rotate(720deg) scale(0); opacity: 0; }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-15px) translateX(8px); }
+  50% { transform: translateY(-5px) translateX(-5px); }
+  75% { transform: translateY(-20px) translateX(3px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+  50% { transform: scale(1.15) rotate(3deg); }
+  70% { transform: scale(0.95) rotate(-1deg); }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes slide-up {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes heart-beat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.15); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.15); }
+  56% { transform: scale(1); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fade-in-scale {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes sparkle-pop {
+  0% { transform: scale(0) rotate(0deg); opacity: 0; }
+  50% { transform: scale(1.2) rotate(180deg); opacity: 1; }
+  100% { transform: scale(0) rotate(360deg); opacity: 0; }
+}
+
+@keyframes dash-march {
+  to { stroke-dashoffset: -20; }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--pink-50);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--pink-300), var(--pink-400));
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--pink-400), var(--pink-500));
+}
+
+/* Selection color */
+::selection {
+  background: var(--pink-200);
+  color: var(--pink-700);
 }
