@@ -1,9 +1,9 @@
 import FloatingParticles from "../components/FloatingParticles";
 import HeroSection from "../components/home/HeroSection";
 import AboutSection from "../components/home/AboutSection";
-import FavoritesSection from "../components/home/FavoritesSection";
-import SkillsEducationSection from "../components/home/SkillsEducationSection";
-import ExperienceSection from "../components/home/ExperienceSection";
+import IdolGroupSection from "../components/home/IdolGroupSection";
+import SongsSection from "../components/home/SongsSection";
+import FooterSection from "../components/home/FooterSection";
 import styles from "../components/home/HomeSections.module.css";
 
 export default function Home() {
@@ -18,12 +18,11 @@ export default function Home() {
 
         <HeroSection />
         <AboutSection />
-        <FavoritesSection />
-        <SkillsEducationSection />
-        <ExperienceSection />
+        <IdolGroupSection />
+        <SongsSection />
 
       </div>
+      <FooterSection />
     </div>
   );
 }
-

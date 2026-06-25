@@ -16,16 +16,16 @@ const bodyFont = Quicksand({
 });
 
 export const metadata = {
-  title: "Kururiiin ♡ Rin's Page",
+  title: "Rin 🐧 Tomoshibi Idol",
   description:
-    "Welcome to Rin's kawaii profile page! Find all my social links, short profile, and connect with me 🍓",
-  keywords: ["kururiiin", "profile", "kawaii", "social links", "linktree"],
+    "Welcome to Rin's page! Member of Tomoshibi Idol ✦ wherever you are, may your days be filled with joy, happiness, and love 🩵✨",
+  keywords: ["rin", "tomoshibi idol", "hey.riiin", "kururiiin", "idol", "profile"],
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍓</text></svg>",
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐧</text></svg>",
   },
   openGraph: {
-    title: "Kururiiin ♡ Rin's Page",
-    description: "Welcome to Rin's kawaii profile page! 🍓",
+    title: "Rin 🐧 Tomoshibi Idol",
+    description: "Welcome to Rin's page! Member of Tomoshibi Idol ✦ wings of phoenix shall reach high 🐦‍🔥🏮",
     type: "website",
   },
 };
