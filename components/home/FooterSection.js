@@ -1,4 +1,6 @@
+import Image from "next/image";
 import styles from "./HomeSections.module.css";
+
 
 function FooterWaIcon() {
   return (
@@ -50,7 +52,16 @@ function FooterLanternIcon() {
 export default function FooterSection() {
   return (
     <footer className={styles.footerSection}>
-      <div className={styles.footerPenguin}>🐧</div>
+      <div className={styles.footerPenguin}>
+        <Image
+          src="/favicon.png"
+          alt="Rin Logo"
+          width={80}
+          height={80}
+          className={styles.footerLogoImg}
+          priority
+        />
+      </div>
       <div className={styles.footerText}>
         Rin&apos;s Little Corner
       </div>

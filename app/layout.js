@@ -21,7 +21,7 @@ export const metadata = {
     "Welcome to Rin's page! Member of Tomoshibi Idol ✦ wherever you are, may your days be filled with joy, happiness, and love 🩵✨",
   keywords: ["rin", "tomoshibi idol", "hey.riiin", "kururiiin", "idol", "profile"],
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐧</text></svg>",
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "Rin 🐧 Tomoshibi Idol",
