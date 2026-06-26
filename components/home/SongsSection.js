@@ -8,7 +8,7 @@ const songs = [
     desc: "Single terbaru Tomoshibi dengan alunan melodi manis dan lirik yang emosional.",
     badge: "Latest Single",
     duration: "4:12",
-    link: "https://www.youtube.com/@tomoshibiofficial"
+    link: "https://youtu.be/0wsd1uB6VG8?si=v_gpB_8rFHdagzcg"
   },
   {
     title: "Chase Your Dream",
@@ -16,7 +16,7 @@ const songs = [
     desc: "Lagu penyemangat yang ceria, menginspirasi semua orang untuk meraih cita-cita.",
     badge: "Pop Single",
     duration: "3:45",
-    link: "https://www.youtube.com/@tomoshibiofficial"
+    link: "https://youtu.be/WcI1V2r-XMg?si=KZXbFDsYQGxwA2hz"
   },
   {
     title: "Phoenix",
@@ -24,7 +24,7 @@ const songs = [
     desc: "Lagu tema ikonik yang melambangkan kebangkitan kembali kekuatan dari abu hangat.",
     badge: "Group Anthem",
     duration: "4:05",
-    link: "https://www.youtube.com/@tomoshibiofficial"
+    link: "https://youtu.be/KBccir-V1TA?si=ZQ9gV2tUMhBkmwUQ"
   },
   {
     title: "Impasse",
@@ -32,7 +32,7 @@ const songs = [
     desc: "Single debut yang enerjik dan dinamis, menandai awal mula perjalanan idol grup.",
     badge: "Debut Single",
     duration: "3:58",
-    link: "https://www.youtube.com/@tomoshibiofficial"
+    link: "https://youtu.be/nvEZflTSgZ8?si=iPrHzxrhIytDCaqj"
   }
 ];
 
