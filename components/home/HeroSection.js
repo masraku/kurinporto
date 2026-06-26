@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Star, Sparkles } from "lucide-react";
+import { Star, Sparkles, Mail } from "lucide-react";
 import SocialBtn from "./SocialBtn";
 import styles from "./HomeSections.module.css";
 
@@ -33,6 +33,10 @@ export default function HeroSection() {
           <SocialBtn href="https://x.com/kururiiin_">Twitter</SocialBtn>
           <SocialBtn href="https://www.tiktok.com/@kururiiin_">TikTok</SocialBtn>
           <SocialBtn href="https://tomoshibi-idol.com/">Tomoshibi</SocialBtn>
+          <SocialBtn href="mailto:kururiiin0910@gmail.com" target="_self">
+            <Mail size={18} />
+            kururiiin0910@gmail.com
+          </SocialBtn>
         </div>
       </div>
 

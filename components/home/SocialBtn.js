@@ -1,11 +1,11 @@
 import styles from "./HomeSections.module.css";
 
-export default function SocialBtn({ href, children }) {
+export default function SocialBtn({ href, target = "_blank", children }) {
   return (
     <a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
       className={styles.socialBtn}
     >
       {children}

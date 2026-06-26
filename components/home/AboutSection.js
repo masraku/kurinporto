@@ -38,16 +38,6 @@ function BloodTypeIcon() {
   );
 }
 
-function GamingIcon() {
-  return (
-    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#3b82f6" }}>
-      <rect x="2" y="6" width="20" height="12" rx="4" fill="rgba(59, 130, 246, 0.08)" stroke="#3b82f6" />
-      <path d="M6 10v4M4 12h4" stroke="#60a5fa" />
-      <circle cx="16" cy="11" r="1" fill="#fef08a" stroke="#fef08a" />
-      <circle cx="18" cy="13" r="1" fill="#fef08a" stroke="#fef08a" />
-    </svg>
-  );
-}
 
 function WibuIcon() {
   return (
@@ -65,7 +55,7 @@ const aboutCards = [
   { icon: <BirthdayIcon />, label: "Birthday", value: "9 October" },
   { icon: <ZodiacIcon />, label: "Zodiac", value: "Libra" },
   { icon: <BloodTypeIcon />, label: "Blood Type", value: "A" },
-  { icon: <WibuIcon />, label: "Hobi", value: "Ngewibu & Craft" },
+  { icon: <WibuIcon />, label: "Hobi", value: "Japanese-Culture Enthusiast & Craft" },
 ];
 
 export default function AboutSection() {
